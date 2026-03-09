@@ -1,0 +1,9 @@
+# Archived / legacy content
+OLD/
+
+# Internal discrepancy reports (instructor-only)
+report.md
+
+# macOS
+.DS_Store
+**/.DS_Store
