@@ -12,7 +12,7 @@
 |:-----|:-----|:--------|:-----|
 | 1. Sub-agents & Manager-Worker Pattern | 📖 Read | Prep for Group C presentation | 15 min |
 | 2. Observability as a Post-hoc Logic Test | 📖 Read | Understand traces and diagrams as validation | 10 min |
-| 3. Demo Readiness Audit | 🛠️ Try | Run pipeline + `/scout` → `/review`; document "landmine" | 15 min |
+| 3. Demo Readiness Audit | 🛠️ Try | Run pipeline + `/scout` → `/trace`; document "landmine" | 15 min |
 | 4. Gate 6 Checklist Preview | 📖 Read | Know what's due by end of Week 6 | 5 min |
 
 ---
@@ -66,7 +66,7 @@
 |:---------------------|:-------------------------------|
 | Unit Tests (Pytest) | **Trace Logs** — "Why did the AI make this decision?" |
 | Integration Tests | **Mermaid Logic Diagrams** — "What path did it take?" |
-| Code Coverage | **`/review` vs. Constitution** — "Did it follow the rules?" |
+| Code Coverage | **`/trace` vs. Constitution** — "Did it follow the rules?" |
 | Manual Debugging | **Devil's Advocate Questions** — "What could go wrong?" |
 
 ---
@@ -79,7 +79,7 @@ A **post-hoc logic test** means you verify the AI's decisions AFTER it runs, by 
 |:-----------------|:-------------|:--------------------------|
 | **Trace output** (decision logs) | `spec.md` acceptance criteria | "Did it do what the spec required?" |
 | **Mermaid diagram** (logic path) | `plan.md` expected flow | "Did it follow the intended path?" |
-| **`/review` output** | `constitution.md` rules | "Did it violate any constraints?" |
+| **`/trace` output** | decision process | "Why did it make the decision that way?" |
 
 ---
 
@@ -103,7 +103,7 @@ A **post-hoc logic test** means you verify the AI's decisions AFTER it runs, by 
 | Week 5 | Week 6 |
 |:-------|:-------|
 | Built individual skills | Integrate skills together |
-| Ran `/review` on single skill | Run `/review` on integrated pipeline |
+| Ran `/trace` on single skill | Run `/trace` on integrated pipeline |
 | Verified skill logic in isolation | Verify **cross-skill logic** via observability |
 
 In Week 6, you'll trace data flowing from Skill A → Skill B and verify the handoff logic matches your `interface-spec.md`.
